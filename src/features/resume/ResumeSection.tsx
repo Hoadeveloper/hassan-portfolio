@@ -293,6 +293,7 @@ export function Resume({ content, profileImage }: ResumeProps) {
                   <div className="flex justify-start pt-2 sm:justify-end">
                     <a
                       href={content.downloadHref}
+                      download
                       className="inline-flex items-center gap-2.5 rounded-[18px] border border-white/8 bg-[#1b4242] px-5 py-3.5 text-[0.98rem] font-medium text-cyan-300 shadow-[0_12px_28px_rgba(9,38,53,0.22)] transition hover:bg-[#5c8374] hover:text-cyan-200"
                     >
                       <Download className="h-4 w-4" />
