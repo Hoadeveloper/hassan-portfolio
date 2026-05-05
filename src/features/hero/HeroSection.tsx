@@ -56,7 +56,7 @@ export function Hero() {
                 <div className="scan-panel rounded-[32px] border border-white/10 bg-white/[0.05] p-4 shadow-[0_30px_80px_rgba(9,38,53,0.55)] ring-1 ring-white/5 backdrop-blur">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] border border-white/10">
                   <Image
-                    src="/images/profile.jpg"
+                    src="/images/hoadev.jpeg"
                     alt="Portrait of Hassan Olanrewaju Abdulrahman"
                     fill
                     priority

@@ -118,7 +118,7 @@ export function About({ mode = "section" }: AboutProps) {
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(158,200,185,0.18),_transparent_58%)]" />
                   <div className="relative aspect-[4/5]">
                     <Image
-                      src="/images/profile.jpg"
+                      src="/images/hoadev.jpeg"
                       alt="Portrait of Hassan Olanrewaju Abdulrahman"
                       fill
                       className="object-cover"

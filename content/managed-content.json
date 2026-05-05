@@ -73,7 +73,7 @@
     "footerBuiltWith": "Built with Next.js, TypeScript, Tailwind, and Framer Motion."
   },
   "media": {
-    "profileImage": "/images/profile.jpg",
+    "profileImage": "/images/hoadev.jpeg",
     "resumeFile": "/resume/hassan-abdulrahman-resume.pdf",
     "projectImages": {
       "formrouter": "/thumbnails/formrouter-cover.png",
