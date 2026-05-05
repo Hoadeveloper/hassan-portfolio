@@ -1,0 +1,320 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-50: #f4faf7;
+  --color-slate-100: #d7ebe4;
+  --color-slate-200: #c2ded5;
+  --color-slate-300: #9ec8b9;
+  --color-slate-400: #86aa9e;
+  --color-slate-500: #5c8374;
+  --color-slate-600: #476f63;
+  --color-slate-700: #34584f;
+  --color-slate-800: #1b4242;
+  --color-slate-900: #12343b;
+  --color-slate-950: #092635;
+
+  --color-cyan-50: #f4faf7;
+  --color-cyan-100: #d7ebe4;
+  --color-cyan-200: #b6d8cc;
+  --color-cyan-300: #9ec8b9;
+  --color-cyan-400: #76a797;
+  --color-cyan-500: #5c8374;
+  --color-cyan-600: #467165;
+  --color-cyan-700: #33594f;
+  --color-cyan-800: #234a46;
+  --color-cyan-900: #1b4242;
+
+  --color-blue-100: #d7ebe4;
+  --color-blue-200: #b6d8cc;
+  --color-blue-300: #9ec8b9;
+  --color-blue-400: #76a797;
+  --color-blue-500: #5c8374;
+  --color-blue-600: #467165;
+  --color-blue-700: #33594f;
+  --color-blue-800: #1b4242;
+  --color-blue-900: #092635;
+
+  --color-emerald-100: #d7ebe4;
+  --color-emerald-300: #9ec8b9;
+  --color-emerald-400: #5c8374;
+}
+
+:root {
+  color-scheme: dark;
+  --home-header-offset: 7.5rem;
+  --palette-ink: #092635;
+  --palette-deep: #1b4242;
+  --palette-sage: #5c8374;
+  --palette-mint: #9ec8b9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html[data-home-scroll="true"] {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 0.75rem;
+}
+
+html[data-home-screens="true"] {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 0;
+  overscroll-behavior-y: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  html[data-home-scroll="true"] {
+    scroll-snap-type: none;
+  }
+
+  html[data-home-screens="true"] {
+    scroll-snap-type: none;
+  }
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, rgba(158, 200, 185, 0.16), transparent 32%),
+    radial-gradient(circle at 85% 16%, rgba(92, 131, 116, 0.16), transparent 24%),
+    linear-gradient(180deg, #092635 0%, #092635 55%, #1b4242 100%);
+  color: #d7ebe4;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neural-node,
+  .scan-panel::before {
+    animation: none !important;
+  }
+}
+
+a,
+button {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+::selection {
+  background: rgba(158, 200, 185, 0.28);
+  color: #f4faf7;
+}
+
+.texture::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(158, 200, 185, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(158, 200, 185, 0.045) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7), transparent 90%);
+}
+
+.scan-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.scan-panel::before {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  background: linear-gradient(
+    180deg,
+    transparent 12%,
+    rgba(158, 200, 185, 0.05) 24%,
+    rgba(158, 200, 185, 0.14) 33%,
+    transparent 48%
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
+  animation: scan-sweep 9s linear infinite;
+}
+
+.neural-field {
+  isolation: isolate;
+}
+
+.neural-node {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(158, 200, 185, 0.9), rgba(92, 131, 116, 0.22) 58%, transparent 70%);
+  box-shadow:
+    0 0 0 1px rgba(158, 200, 185, 0.1),
+    0 0 20px rgba(158, 200, 185, 0.2);
+  animation: neural-drift 11s ease-in-out infinite;
+}
+
+.neural-node::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(158, 200, 185, 0.2), transparent 78%);
+  transform: translateY(-50%);
+  transform-origin: left center;
+  opacity: 0.65;
+}
+
+.neural-node-delay {
+  animation-delay: -3.5s;
+}
+
+.neural-node-slow {
+  animation-duration: 15s;
+}
+
+@keyframes scan-sweep {
+  0% {
+    transform: translateY(-26%) rotate(8deg);
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 0.7;
+  }
+
+  52% {
+    opacity: 0.25;
+  }
+
+  100% {
+    transform: translateY(30%) rotate(8deg);
+    opacity: 0;
+  }
+}
+
+@keyframes neural-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  30% {
+    transform: translate3d(10px, -12px, 0) scale(1.08);
+  }
+
+  60% {
+    transform: translate3d(-12px, 8px, 0) scale(0.96);
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  border-radius: 9999px;
+  background: #9ec8b9;
+  color: #092635;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.scroll-stage {
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+.home-screen-shell {
+  position: relative;
+}
+
+.home-page-stack {
+  height: calc(100svh - var(--home-header-offset));
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.home-page-screen {
+  height: calc(100svh - var(--home-header-offset));
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  content-visibility: auto;
+  contain: layout paint style;
+  contain-intrinsic-size: calc(100svh - var(--home-header-offset));
+}
+
+.home-screen-panel {
+  min-height: 100svh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-margin-top: 0;
+}
+
+.home-screen-frame {
+  backdrop-filter: blur(14px);
+}
+
+.scroll-stage-panel {
+  background:
+    linear-gradient(180deg, rgba(9, 38, 53, 0.58), rgba(9, 38, 53, 0.26)),
+    radial-gradient(circle at top, rgba(158, 200, 185, 0.08), transparent 52%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 18px 70px rgba(9, 38, 53, 0.28);
+}
+
+.scroll-stage-frame {
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 0 50px rgba(27, 66, 66, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-stage {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .home-page-stack {
+    scroll-snap-type: y proximity;
+  }
+
+  .home-page-screen {
+    min-height: calc(100svh - var(--home-header-offset));
+    height: auto;
+    content-visibility: visible;
+    contain: none;
+  }
+
+  .home-screen-frame {
+    backdrop-filter: blur(10px);
+  }
+}

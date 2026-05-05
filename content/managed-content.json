@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-06T00:00:00.000Z",
+  "site": {
+    "name": "Hassan Olanrewaju Abdulrahman",
+    "shortName": "Hassan Abdulrahman",
+    "title": "Frontend, backend, and automation-focused developer building modern websites, web apps, APIs, and bot-powered solutions.",
+    "description": "Personal portfolio of Hassan Olanrewaju Abdulrahman, a full-stack web developer working across frontend development, backend systems, PHP, Python, APIs, bots, and practical software solutions.",
+    "location": "Available for remote-friendly web, backend, and automation work.",
+    "availability": "Open to freelance, contract, and long-term engineering opportunities.",
+    "email": "lanrehassanabd@gmail.com",
+    "phone": "+2349155247829",
+    "github": "https://github.com/Hoadeveloper",
+    "linkedin": "https://www.linkedin.com/in/olanrewaju-hassan-919405259/",
+    "telegram": "https://t.me/hoadeveloper",
+    "discord": "your-discord-handle",
+    "metadataBase": "https://formrouter.live",
+    "ctaLabel": "Let's talk",
+    "ctaHref": "/contact",
+    "quickContacts": [
+      {
+        "kind": "email",
+        "label": "Email",
+        "value": "lanrehassanabd@gmail.com",
+        "href": "mailto:lanrehassanabd@gmail.com"
+      },
+      {
+        "kind": "phone",
+        "label": "Phone",
+        "value": "+2349155247829",
+        "href": "tel:+2349155247829"
+      },
+      {
+        "kind": "github",
+        "label": "GitHub",
+        "value": "github.com/Hoadeveloper",
+        "href": "https://github.com/Hoadeveloper"
+      },
+      {
+        "kind": "linkedin",
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/olanrewaju-hassan-919405259",
+        "href": "https://www.linkedin.com/in/olanrewaju-hassan-919405259/"
+      },
+      {
+        "kind": "telegram",
+        "label": "Telegram",
+        "value": "@hoadeveloper",
+        "href": "https://t.me/hoadeveloper"
+      }
+    ]
+  },
+  "navigation": {
+    "items": [
+      {
+        "label": "Project",
+        "href": "/portfolio"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      {
+        "label": "Resume",
+        "href": "/resume"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      }
+    ],
+    "footerIntro": "Frontend, backend, automation, and product-ready web development with a practical engineering mindset.",
+    "footerBuiltWith": "Built with Next.js, TypeScript, Tailwind, and Framer Motion."
+  },
+  "media": {
+    "profileImage": "/images/hoadev.jpeg",
+    "resumeFile": "/resume/hassan-abdulrahman-resume.pdf",
+    "projectImages": {
+      "formrouter": "/thumbnails/formrouter-cover.png",
+      "developer-workflow-api": "",
+      "automation-landing-site": ""
+    },
+    "blogCoverImages": {
+      "reliable-api-workflows-for-modern-products": "/images/blog/api-workflows-clean.png",
+      "automation-patterns-with-bots-and-developer-tools": "/images/blog/automation-bots-clean.png",
+      "frontend-performance-habits-for-fast-portfolio-sites": "/images/blog/frontend-performance-clean.png",
+      "secure-file-uploads-and-practical-backend-validation": "/images/blog/secure-file-uploads-clean.png"
+    }
+  },
+  "home": {
+    "section1": {
+      "eyebrow": "FULL-STACK WEB DEVELOPMENT",
+      "name": "Hassan Olanrewaju. A",
+      "roleLine": "Frontend, backend, and automation-focused developer.",
+      "profileRole": "Full-stack web developer",
+      "description": "I build modern websites, web apps, APIs, bots, and practical software solutions with a focus on clean implementation, dependable structure, and real-world usefulness.",
+      "statusText": "Open to freelance, contract, and long-term engineering opportunities.",
+      "highlights": [
+        "Frontend & backend",
+        "Web apps & security",
+        "APIs & automation",
+        "Bots & integrations"
+      ],
+      "primaryCta": {
+        "label": "Start a conversation",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "View resume",
+        "href": "/resume"
+      }
+    },
+    "section2": {
+      "eyebrow": "APPROACH",
+      "headingLine1": "I focus on building software",
+      "headingLine2": "that is clear, useful, and dependable.",
+      "descriptionPrimary": "I build software that solves real problems cleanly, with a focus on structure, usability, and practical long-term value.",
+      "descriptionSecondary": "My approach combines development and security awareness to keep systems clear, efficient, and dependable.",
+      "tags": [
+        "Structure & Usability",
+        "Efficient Workflows",
+        "Security Awareness"
+      ],
+      "quote": "Build clearly, think through behavior, avoid unnecessary complexity.",
+      "principleCards": [
+        {
+          "title": "Clear Implementation",
+          "body": "Thoughtful, efficient code execution.",
+          "icon": "check-square-2"
+        },
+        {
+          "title": "Product-Minded Thinking",
+          "body": "User-focused & value-driven decisions.",
+          "icon": "lightbulb"
+        },
+        {
+          "title": "Workflow Problem Solving",
+          "body": "Streamlined and practical solutions.",
+          "icon": "workflow"
+        },
+        {
+          "title": "Security-Aware Decisions",
+          "body": "Prioritizing safety and risk mitigation.",
+          "icon": "shield-check"
+        }
+      ]
+    },
+    "section3": {
+      "eyebrow": "WHAT I DO",
+      "heading": "The kind of development work I focus on most.",
+      "description": "I work across modern web interfaces, backend systems, APIs, automation, and bot-powered tools with a focus on practical software that stays useful.",
+      "sideNote": "Clean code. Smart systems.\nPractical outcomes.",
+      "capabilities": [
+        {
+          "title": "Frontend development",
+          "body": "Modern interfaces built for clarity, responsiveness, and real users.",
+          "icon": "code-2"
+        },
+        {
+          "title": "Backend development",
+          "body": "Application logic, structured workflows, and dependable system behavior.",
+          "icon": "database"
+        },
+        {
+          "title": "Web and mobile app development",
+          "body": "Complete web and mobile applications that connect intuitive user experiences with practical backend systems.",
+          "icon": "app-window"
+        },
+        {
+          "title": "Telegram bot development",
+          "body": "Bots that automate tasks, improve responsiveness, and support useful workflows.",
+          "icon": "send"
+        },
+        {
+          "title": "Discord bot development",
+          "body": "Bot tools for moderation, utility, workflows, and community interaction.",
+          "icon": "bot"
+        },
+        {
+          "title": "Security-aware implementation",
+          "body": "Development decisions shaped by validation, safer defaults, and more thoughtful system behavior.",
+          "icon": "shield-check"
+        }
+      ]
+    },
+    "section4": {
+      "eyebrow": "CORE TECHNOLOGIES",
+      "centerTitle": "Core Stack",
+      "centerSubtitle": "SYSTEM NODE",
+      "modules": [
+        {
+          "title": "Frontend",
+          "icon": "braces",
+          "items": [
+            {
+              "label": "HTML"
+            },
+            {
+              "label": "CSS"
+            },
+            {
+              "label": "Next.js"
+            },
+            {
+              "label": "TypeScript",
+              "emphasis": true
+            },
+            {
+              "label": "JavaScript"
+            }
+          ]
+        },
+        {
+          "title": "Backend",
+          "icon": "database",
+          "items": [
+            {
+              "label": "PHP",
+              "emphasis": true
+            },
+            {
+              "label": "Python"
+            },
+            {
+              "label": "Flask"
+            },
+            {
+              "label": "FastAPI"
+            },
+            {
+              "label": "MySQL"
+            }
+          ]
+        },
+        {
+          "title": "Bots & Automation",
+          "icon": "bot",
+          "items": [
+            {
+              "label": "python-telegram-bot"
+            },
+            {
+              "label": "discord.py"
+            },
+            {
+              "label": "API Development"
+            },
+            {
+              "label": "Automation Workflows"
+            }
+          ]
+        },
+        {
+          "title": "Broader Technical Areas",
+          "icon": "globe",
+          "items": [
+            {
+              "label": "Web Development"
+            },
+            {
+              "label": "Software Development"
+            },
+            {
+              "label": "Penetration Testing"
+            },
+            {
+              "label": "Ethical Hacking Fundamentals"
+            }
+          ]
+        }
+      ]
+    },
+    "section5": {
+      "title": "Engineering mindset",
+      "description": "Reserved for a future homepage section."
+    },
+    "section6": {
+      "title": "Call to action",
+      "description": "Reserved for a future homepage section.",
+      "primaryCta": {
+        "label": "Open contact page",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Download resume",
+        "href": "/resume"
+      }
+    }
+  },
+  "projects": {
+    "pageTitle": "Projects",
+    "intro": "",
+    "filters": [
+      "All",
+      "Websites",
+      "Backend Systems",
+      "APIs",
+      "Bots"
+    ],
+    "sidebarName": "Hassan O.A",
+    "sidebarRole": "Full-stack Web Developer",
+    "sidebarStatusText": "Open to freelance, contract, and long-term engineering opportunities.",
+    "featuredProject": {
+      "category": "BACKEND SYSTEMS",
+      "title": "FormRouter",
+      "description": "Form platform for instant submissions, validation, workflows, and automation.",
+      "primaryButton": {
+        "label": "Visit product",
+        "href": "https://formrouter.live"
+      },
+      "secondaryButton": {
+        "label": "Read more",
+        "href": "/contact"
+      },
+      "visualEyebrow": "FEATURED BUILD",
+      "visualTitle": "Instant form routing",
+      "visualSummary": "Product-oriented backend workflow system"
+    },
+    "cards": [
+      {
+        "title": "FormRouter",
+        "category": "Backend Systems",
+        "description": "",
+        "href": "https://formrouter.live",
+        "cta": "View Project",
+        "icon": "database",
+        "accent": "backend"
+      }
+    ]
+  },
+  "resume": {
+    "pageTitle": "Resume",
+    "sidebarName": "Hassan O.A",
+    "sidebarRole": "Full-stack Web Developer",
+    "sidebarStatusText": "Open to freelance, contract, and long-term engineering opportunities.",
+    "downloadLabel": "Download CV",
+    "downloadHref": "/resume/hassan-abdulrahman-resume.pdf",
+    "education": [
+      {
+        "title": "Federal University of Agriculture, Abeokuta (FUNAAB)",
+        "subtitle": "Bachelor of Agriculture in Plant Breeding and Seed Technology",
+        "period": "2017 - 2024",
+        "bullets": [
+          "Completed undergraduate study in agriculture with a focus on plant breeding, seed technology, crop improvement, and agricultural science."
+        ]
+      },
+      {
+        "title": "Univelcity",
+        "subtitle": "Certificate of Completion in Ethical Hacking and Countermeasures",
+        "period": "2025",
+        "bullets": [
+          "Completed training in ethical hacking, cybersecurity fundamentals, threat awareness, and practical countermeasure concepts."
+        ]
+      },
+      {
+        "title": "Bosworth College",
+        "subtitle": "Senior Secondary Certificate Examination (SSCE)",
+        "period": "Completed",
+        "bullets": []
+      },
+      {
+        "title": "Murtala Muhammed Airport Secondary School",
+        "subtitle": "Junior Secondary Certificate Examination (JSCE)",
+        "period": "Completed",
+        "bullets": []
+      }
+    ],
+    "experience": [
+      {
+        "title": "Backend & Automation Development",
+        "subtitle": "Current tools",
+        "period": "Current focus",
+        "meta": "Python / Flask / FastAPI / MySQL",
+        "visualLabel": "Systems",
+        "icon": "workflow",
+        "bullets": [
+          "Build backend features, validation flows, API-driven products.",
+          "Design automation-oriented solutions that reduce manual work and improve workflow reliability.",
+          "Approach implementation with a strong focus on readable structure, maintainability, and useful outcomes."
+        ]
+      },
+      {
+        "title": "Telegram & Discord Bot Systems",
+        "subtitle": "Ongoing",
+        "period": "Ongoing",
+        "meta": "python-telegram-bot / discord.py",
+        "visualLabel": "Bots",
+        "icon": "bot",
+        "bullets": [
+          "Create bot-powered interactions that connect users to commands, notifications, and workflow actions.",
+          "Approach implementation so services are more responsive and easier to operate."
+        ]
+      }
+    ]
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "sidebarName": "Hassan O.A",
+    "sidebarRole": "Full-stack Web Developer",
+    "sidebarStatusText": "Open to freelance, contract, and long-term engineering opportunities.",
+    "posts": [
+      {
+        "eyebrow": "API Systems",
+        "title": "Reliable API Workflows for Modern Products",
+        "author": "Hassan O.A",
+        "excerpt": "A concise look at validation, backend structure, and response handling for products that depend on dependable API behavior.",
+        "status": "published",
+        "slug": "reliable-api-workflows-for-modern-products",
+        "category": "API Systems",
+        "coverImage": "/images/blog/api-workflows-clean.png",
+        "ctaLabel": "Read More",
+        "ctaHref": "/contact",
+        "date": "Apr 18, 2026"
+      },
+      {
+        "eyebrow": "Automation",
+        "title": "Automation Patterns with Bots and Developer Tools",
+        "coverTitle": "Automation Patterns with Bots and Developer Tools",
+        "author": "Hassan O.A",
+        "excerpt": "A compact breakdown of how Telegram and Discord bots can improve workflows, response speed, and developer-facing tooling.",
+        "status": "published",
+        "slug": "automation-patterns-with-bots-and-developer-tools",
+        "category": "Automation",
+        "coverImage": "/images/blog/automation-bots-clean.png",
+        "ctaLabel": "Read More",
+        "ctaHref": "/contact",
+        "date": "Apr 24, 2026"
+      },
+      {
+        "eyebrow": "Frontend",
+        "title": "Frontend Performance Habits for Fast Portfolio Sites",
+        "coverTitle": "Frontend Performance Habits for Fast Portfolio Sites",
+        "author": "Hassan O.A",
+        "excerpt": "Practical habits for keeping portfolio pages quick: image sizing, lightweight animations, reusable sections, and layout choices that stay smooth on mobile.",
+        "status": "published",
+        "slug": "frontend-performance-habits-for-fast-portfolio-sites",
+        "category": "Frontend",
+        "coverImage": "/images/blog/frontend-performance-clean.png",
+        "ctaLabel": "Read More",
+        "ctaHref": "/contact",
+        "date": "Apr 29, 2026"
+      },
+      {
+        "eyebrow": "Backend Security",
+        "title": "Secure File Uploads and Practical Backend Validation",
+        "coverTitle": "Secure File Uploads and Practical Backend Validation",
+        "author": "Hassan O.A",
+        "excerpt": "A developer-focused note on validating uploads, controlling file paths, checking size limits, and designing safer storage flows before files reach production.",
+        "status": "published",
+        "slug": "secure-file-uploads-and-practical-backend-validation",
+        "category": "Backend Security",
+        "coverImage": "/images/blog/secure-file-uploads-clean.png",
+        "ctaLabel": "Read More",
+        "ctaHref": "/contact",
+        "date": "May 2, 2026"
+      }
+    ]
+  }
+}

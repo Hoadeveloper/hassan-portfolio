@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-04-05T23:16:25.502Z",
+  "lucide": [
+    {
+      "name": "AppWindow",
+      "file": "lucide/app-window.svg"
+    },
+    {
+      "name": "ArrowDownToLine",
+      "file": "lucide/arrow-down-to-line.svg"
+    },
+    {
+      "name": "ArrowRight",
+      "file": "lucide/arrow-right.svg"
+    },
+    {
+      "name": "ArrowUpRight",
+      "file": "lucide/arrow-up-right.svg"
+    },
+    {
+      "name": "BookOpenText",
+      "file": "lucide/book-open-text.svg"
+    },
+    {
+      "name": "Bot",
+      "file": "lucide/bot.svg"
+    },
+    {
+      "name": "Boxes",
+      "file": "lucide/boxes.svg"
+    },
+    {
+      "name": "Braces",
+      "file": "lucide/braces.svg"
+    },
+    {
+      "name": "BriefcaseBusiness",
+      "file": "lucide/briefcase-business.svg"
+    },
+    {
+      "name": "CalendarDays",
+      "file": "lucide/calendar-days.svg"
+    },
+    {
+      "name": "CheckSquare2",
+      "file": "lucide/check-square2.svg"
+    },
+    {
+      "name": "Code2",
+      "file": "lucide/code2.svg"
+    },
+    {
+      "name": "Database",
+      "file": "lucide/database.svg"
+    },
+    {
+      "name": "Download",
+      "file": "lucide/download.svg"
+    },
+    {
+      "name": "Globe",
+      "file": "lucide/globe.svg"
+    },
+    {
+      "name": "Layers2",
+      "file": "lucide/layers2.svg"
+    },
+    {
+      "name": "LayoutPanelLeft",
+      "file": "lucide/layout-panel-left.svg"
+    },
+    {
+      "name": "Lightbulb",
+      "file": "lucide/lightbulb.svg"
+    },
+    {
+      "name": "LockKeyhole",
+      "file": "lucide/lock-keyhole.svg"
+    },
+    {
+      "name": "Mail",
+      "file": "lucide/mail.svg"
+    },
+    {
+      "name": "MapPin",
+      "file": "lucide/map-pin.svg"
+    },
+    {
+      "name": "MessageSquareMore",
+      "file": "lucide/message-square-more.svg"
+    },
+    {
+      "name": "Send",
+      "file": "lucide/send.svg"
+    },
+    {
+      "name": "ServerCog",
+      "file": "lucide/server-cog.svg"
+    },
+    {
+      "name": "ShieldCheck",
+      "file": "lucide/shield-check.svg"
+    },
+    {
+      "name": "Sparkles",
+      "file": "lucide/sparkles.svg"
+    },
+    {
+      "name": "TerminalSquare",
+      "file": "lucide/terminal-square.svg"
+    },
+    {
+      "name": "UserRound",
+      "file": "lucide/user-round.svg"
+    },
+    {
+      "name": "Waypoints",
+      "file": "lucide/waypoints.svg"
+    },
+    {
+      "name": "Workflow",
+      "file": "lucide/workflow.svg"
+    },
+    {
+      "name": "Wrench",
+      "file": "lucide/wrench.svg"
+    }
+  ],
+  "customStack": [
+    {
+      "file": "custom-stack/css.svg"
+    },
+    {
+      "file": "custom-stack/discord-py.svg"
+    },
+    {
+      "file": "custom-stack/fastapi.svg"
+    },
+    {
+      "file": "custom-stack/flask.svg"
+    },
+    {
+      "file": "custom-stack/github.svg"
+    },
+    {
+      "file": "custom-stack/html.svg"
+    },
+    {
+      "file": "custom-stack/javascript.svg"
+    },
+    {
+      "file": "custom-stack/linkedin.svg"
+    },
+    {
+      "file": "custom-stack/mysql.svg"
+    },
+    {
+      "file": "custom-stack/nextjs.svg"
+    },
+    {
+      "file": "custom-stack/php.svg"
+    },
+    {
+      "file": "custom-stack/python-telegram-bot.svg"
+    },
+    {
+      "file": "custom-stack/python.svg"
+    },
+    {
+      "file": "custom-stack/typescript.svg"
+    }
+  ]
+}
