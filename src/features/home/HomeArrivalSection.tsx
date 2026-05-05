@@ -26,50 +26,7 @@ export function HomeArrivalSection({
 }: HomeArrivalSectionProps) {
   const prefersReducedMotion = useReducedMotion();
   const motionEnabled = !prefersReducedMotion;
-  const [typedName, setTypedName] = useState(() => (motionEnabled ? "" : name));
-  const [typedRoleLine, setTypedRoleLine] = useState(() => (motionEnabled ? "" : roleLine));
   const [typedAvailability, setTypedAvailability] = useState("");
-
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    let nameIndex = 0;
-    let roleIndex = 0;
-    let nameIntervalId: number | undefined;
-    let roleIntervalId: number | undefined;
-
-    const startTimer = window.setTimeout(() => {
-      nameIntervalId = window.setInterval(() => {
-        nameIndex += 1;
-        setTypedName(name.slice(0, nameIndex));
-
-        if (nameIndex >= name.length) {
-          window.clearInterval(nameIntervalId);
-
-          roleIntervalId = window.setInterval(() => {
-            roleIndex += 1;
-            setTypedRoleLine(roleLine.slice(0, roleIndex));
-
-            if (roleIndex >= roleLine.length) {
-              window.clearInterval(roleIntervalId);
-            }
-          }, 18);
-        }
-      }, 28);
-    }, 280);
-
-    return () => {
-      window.clearTimeout(startTimer);
-      if (nameIntervalId) {
-        window.clearInterval(nameIntervalId);
-      }
-      if (roleIntervalId) {
-        window.clearInterval(roleIntervalId);
-      }
-    };
-  }, [name, prefersReducedMotion, roleLine]);
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -237,13 +194,7 @@ export function HomeArrivalSection({
                   transition={motionEnabled ? { duration: 0.52, ease: "easeOut", delay: 0.18 } : undefined}
                   className="max-w-[13ch] text-[1.72rem] font-semibold tracking-[-0.045em] text-white sm:max-w-none sm:text-[2.12rem] sm:leading-[0.98] lg:text-[2.95rem] lg:leading-[0.96]"
                 >
-                  {typedName || "\u00A0"}
-                  {!prefersReducedMotion && typedName.length < name.length ? (
-                    <span
-                      aria-hidden="true"
-                      className="ml-1 inline-block h-[0.92em] w-[2px] translate-y-[0.12em] bg-cyan-200/90 align-top"
-                    />
-                  ) : null}
+                  {name}
                 </motion.h1>
 
                 <motion.div
@@ -253,15 +204,7 @@ export function HomeArrivalSection({
                   className="inline-flex min-h-[2.5rem] max-w-[39rem] items-center rounded-[16px] border border-cyan-300/12 bg-cyan-300/[0.04] px-3 py-2 sm:min-h-[2.9rem] sm:px-4"
                 >
                   <p className="text-[0.95rem] font-medium tracking-[0.005em] text-cyan-100/92 sm:text-[1.05rem]">
-                    {typedRoleLine || "\u00A0"}
-                    {!prefersReducedMotion &&
-                    typedName.length >= name.length &&
-                    typedRoleLine.length < roleLine.length ? (
-                      <span
-                        aria-hidden="true"
-                        className="ml-1 inline-block h-[0.92em] w-[2px] translate-y-[0.12em] bg-cyan-200/90 align-top"
-                      />
-                    ) : null}
+                    {roleLine}
                   </p>
                 </motion.div>
 
