@@ -306,7 +306,7 @@
       "description": "Form platform for instant submissions, validation, workflows, and automation.",
       "primaryButton": {
         "label": "Visit product",
-        "href": "https://formrouter.live"
+        "href": "https://formrouter.page.gd"
       },
       "secondaryButton": {
         "label": "Read more",
@@ -321,7 +321,7 @@
         "title": "FormRouter",
         "category": "Backend Systems",
         "description": "",
-        "href": "https://formrouter.live",
+        "href": "https://formrouter.page.gd",
         "cta": "View Project",
         "icon": "database",
         "accent": "backend"
