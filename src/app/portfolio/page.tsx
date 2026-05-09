@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { Portfolio } from "@/features/portfolio/PortfolioSection";
 import { getManagedContent } from "@/lib/managed-content";
+import { PortfolioMobilePage } from "@/mobile/portfolio/PortfolioMobilePage";
 import { createPageMetadata } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -19,11 +20,18 @@ export default async function PortfolioPage() {
   const content = await getManagedContent();
 
   return (
-    <Portfolio
-      content={content.projects}
-      projectImages={content.media.projectImages}
-      quickContacts={content.site.quickContacts}
-      profileImage={content.media.profileImage}
-    />
+    <>
+      <div className="block lg:hidden">
+        <PortfolioMobilePage content={content} />
+      </div>
+      <div className="hidden lg:block">
+        <Portfolio
+          content={content.projects}
+          projectImages={content.media.projectImages}
+          quickContacts={content.site.quickContacts}
+          profileImage={content.media.profileImage}
+        />
+      </div>
+    </>
   );
 }

@@ -89,12 +89,12 @@ export function QuickContactList({
 
   if (mode === "footer") {
     return (
-      <div className="flex flex-wrap gap-2.5 sm:justify-end">
+      <div className="flex flex-nowrap justify-center gap-1.5">
         {items.map((item) => (
           <Link
             key={item.label}
             href={item.href}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[0.72rem] text-slate-300 transition hover:border-cyan-300/20 hover:text-cyan-100"
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-2 py-1.5 text-[0.64rem] text-slate-300 transition hover:border-cyan-300/20 hover:text-cyan-100 sm:gap-2 sm:px-3 sm:text-[0.72rem]"
           >
             <span className="text-cyan-300">
               <ContactIcon kind={item.kind} />

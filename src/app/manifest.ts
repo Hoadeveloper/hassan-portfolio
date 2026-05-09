@@ -15,7 +15,7 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
     theme_color: "#092635",
     icons: [
       {
-        src: "/images/hoadev-icon.png",
+        src: "/images/hoa-logo.png",
         sizes: "512x512",
         type: "image/png",
       },

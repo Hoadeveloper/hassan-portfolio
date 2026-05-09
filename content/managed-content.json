@@ -162,8 +162,8 @@
           "icon": "database"
         },
         {
-          "title": "Web and mobile app development",
-          "body": "Complete web and mobile applications that connect intuitive user experiences with practical backend systems.",
+          "title": "Software development",
+          "body": "Practical software solutions built with clean structure, useful workflows, and dependable implementation.",
           "icon": "app-window"
         },
         {
@@ -193,10 +193,10 @@
           "icon": "braces",
           "items": [
             {
-              "label": "HTML"
+              "label": "JavaScript"
             },
             {
-              "label": "CSS"
+              "label": "React"
             },
             {
               "label": "Next.js"
@@ -204,9 +204,6 @@
             {
               "label": "TypeScript",
               "emphasis": true
-            },
-            {
-              "label": "JavaScript"
             }
           ]
         },
@@ -222,13 +219,11 @@
               "label": "Python"
             },
             {
-              "label": "Flask"
+              "label": "PostgreSQL"
             },
             {
-              "label": "FastAPI"
-            },
-            {
-              "label": "MySQL"
+              "label": "MySQL",
+              "emphasis": true
             }
           ]
         },
@@ -318,13 +313,22 @@
     },
     "cards": [
       {
-        "title": "FormRouter",
-        "category": "Backend Systems",
-        "description": "",
-        "href": "https://formrouter.page.gd",
+        "title": "Developer Workflow API",
+        "category": "APIs",
+        "description": "API-focused backend work for structured request handling, validation, integrations, and reliable product workflows.",
+        "href": "/contact",
         "cta": "View Project",
-        "icon": "database",
-        "accent": "backend"
+        "icon": "sparkles",
+        "accent": "api"
+      },
+      {
+        "title": "Automation Landing Site",
+        "category": "Websites",
+        "description": "Responsive landing page work for automation services, clear product messaging, and conversion-focused mobile layouts.",
+        "href": "/contact",
+        "cta": "View Project",
+        "icon": "globe",
+        "accent": "website"
       }
     ]
   },

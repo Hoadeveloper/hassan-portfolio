@@ -40,8 +40,11 @@ export async function generateMetadata(): Promise<Metadata> {
       "Discord bot developer",
     ],
     icons: {
-      icon: "/icon.png",
-      shortcut: "/icon.png",
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/icon.png", type: "image/png" },
+      ],
+      shortcut: "/favicon.ico",
       apple: "/apple-icon.png",
     },
   };

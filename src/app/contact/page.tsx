@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { Contact } from "@/features/contact/ContactSection";
 import { getManagedContent } from "@/lib/managed-content";
+import { ContactMobilePage } from "@/mobile/contact/ContactMobilePage";
 import { createPageMetadata } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -17,5 +18,19 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function ContactPage() {
   const content = await getManagedContent();
-  return <Contact mode="page" managedSite={content.site} profileImage={content.media.profileImage} />;
+
+  return (
+    <>
+      <div className="block lg:hidden">
+        <ContactMobilePage content={content} />
+      </div>
+      <div className="hidden lg:block">
+        <Contact
+          mode="page"
+          managedSite={content.site}
+          profileImage={content.media.profileImage}
+        />
+      </div>
+    </>
+  );
 }

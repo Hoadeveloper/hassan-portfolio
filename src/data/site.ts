@@ -19,8 +19,10 @@ export const site: Site = {
     "Discord Bot Developer",
   ],
   navItems: [
-    { href: "#project", label: "Project" },
-    { href: "#contact", label: "Contact" },
+    { href: "/portfolio", label: "Project" },
+    { href: "/contact", label: "Contact" },
+    { href: "/resume", label: "Resume" },
+    { href: "/blog", label: "Blog" },
   ],
   contactActions: [
     {

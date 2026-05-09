@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { Resume } from "@/features/resume/ResumeSection";
 import { getManagedContent } from "@/lib/managed-content";
+import { ResumeMobilePage } from "@/mobile/resume/ResumeMobilePage";
 import { createPageMetadata } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -17,5 +18,18 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function ResumePage() {
   const content = await getManagedContent();
-  return <Resume content={content.resume} profileImage={content.media.profileImage} />;
+
+  return (
+    <>
+      <div className="block lg:hidden">
+        <ResumeMobilePage content={content} />
+      </div>
+      <div className="hidden lg:block">
+        <Resume
+          content={content.resume}
+          profileImage={content.media.profileImage}
+        />
+      </div>
+    </>
+  );
 }
