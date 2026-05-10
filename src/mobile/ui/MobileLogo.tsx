@@ -9,6 +9,7 @@ export function MobileLogo() {
       height={30}
       sizes="30px"
       className="h-[1.875rem] w-[1.875rem] shrink-0 object-contain"
+      unoptimized
       priority
     />
   );

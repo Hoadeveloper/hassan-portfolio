@@ -27,6 +27,7 @@ export function HomeArrivalSection({
   const prefersReducedMotion = useReducedMotion();
   const motionEnabled = !prefersReducedMotion;
   const [typedAvailability, setTypedAvailability] = useState("");
+  const profileCardName = "Hassan O.A";
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -122,7 +123,7 @@ export function HomeArrivalSection({
                     {profileImage ? (
                       <Image
                         src={profileImage}
-                        alt={`${name} portrait`}
+                        alt={`${profileCardName} portrait`}
                         fill
                         sizes="(max-width: 1024px) 18rem, 14rem"
                         className="object-cover"
@@ -141,7 +142,7 @@ export function HomeArrivalSection({
                         </div>
                       </>
                     )}
-                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_58%,rgba(8,15,30,0.32))]" />
+                    <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(8,15,30,0.08),rgba(8,15,30,0.34))]" />
                   </div>
                 </div>
 
@@ -156,7 +157,7 @@ export function HomeArrivalSection({
                     </span>
                   </div>
                   <p className="text-[0.98rem] font-semibold tracking-[-0.03em] text-white sm:text-[1.08rem]">
-                    {name}
+                    {profileCardName}
                   </p>
                   <p className="text-sm leading-6 text-slate-300/88">{profileRole}</p>
                   <div className="rounded-[18px] border border-cyan-400/10 bg-[#1b4242] px-3 py-3">

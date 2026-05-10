@@ -72,12 +72,12 @@ export function QuickContactList({
 }: QuickContactListProps) {
   if (mode === "compact") {
     return (
-      <div className="mt-6 flex flex-wrap justify-center gap-2.5">
+      <div className="mt-4 flex flex-wrap justify-center gap-2">
         {items.map((item) => (
           <Link
             key={item.label}
             href={item.href}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-[14px] border border-white/10 bg-[#1b4242] text-cyan-300 transition hover:border-cyan-300/22 hover:text-cyan-200"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-[12px] border border-white/10 bg-[#1b4242] text-cyan-300 transition hover:border-cyan-300/22 hover:text-cyan-200"
             aria-label={item.label}
           >
             <ContactIcon kind={item.kind} />

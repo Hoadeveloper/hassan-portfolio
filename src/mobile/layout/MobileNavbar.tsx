@@ -11,10 +11,7 @@ type MobileNavbarProps = {
   navItems: { label: string; href: string }[];
 };
 
-export function MobileNavbar({
-  siteName,
-  navItems,
-}: MobileNavbarProps) {
+export function MobileNavbar({ siteName, navItems }: MobileNavbarProps) {
   const [open, setOpen] = useState(false);
   const [firstName, ...rest] = siteName.split(" ");
   const secondLine = rest.slice(0, 2).join(" ") || "Portfolio";

@@ -10,7 +10,7 @@ import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const content = await getManagedContent();
-  const baseTitle = `${content.site.name} | Full-Stack Web Developer`;
+  const baseTitle = `${content.site.name} | Full-stack developer`;
 
   return {
     ...createPageMetadata(content.site, {
@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: "/manifest.webmanifest",
     keywords: [
       "Hassan Olanrewaju Abdulrahman",
-      "full-stack web developer",
+      "Full-stack developer",
       "backend developer",
       "Next.js portfolio",
       "API developer",

@@ -40,7 +40,7 @@ export function MobileHomeHeader({ hero }: MobileHomeHeaderProps) {
               className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(158,200,185,0.16),transparent_54%)]"
             />
             <Image
-              src="/images/hoadev-cutout.png"
+              src="/images/hoadev-cutout-dark.png"
               alt={`${hero.name} portrait`}
               fill
               sizes="108px"

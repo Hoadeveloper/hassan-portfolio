@@ -3,7 +3,6 @@ import {
 } from "lucide-react";
 
 import { FadeIn } from "@/components/animations/FadeIn";
-import { QuickContactList } from "@/components/contact/QuickContactList";
 import { Container } from "@/components/layout/Container";
 import { ProfileSidebarCard } from "@/components/profile/ProfileSidebarCard";
 import { Badge } from "@/components/ui/Badge";
@@ -45,14 +44,13 @@ export function Contact({ mode = "section", managedSite, profileImage }: Contact
   if (isPage) {
     return (
       <section className="pb-12 pt-8 sm:pb-14 sm:pt-10 lg:pb-16 lg:pt-12">
-        <Container className="max-w-[1260px]">
-          <div className="grid gap-5 lg:grid-cols-[232px_minmax(0,1fr)] xl:grid-cols-[244px_minmax(0,1fr)]">
-            <FadeIn className="lg:pt-1">
+        <Container className="max-w-[1120px]">
+          <div className="grid gap-5 lg:grid-cols-[188px_minmax(0,0.88fr)] xl:grid-cols-[200px_minmax(0,0.88fr)]">
+            <FadeIn className="lg:self-start lg:pt-1">
               <ProfileSidebarCard
                 name={contactSite.shortName}
-                role="Full-stack Web Developer"
+                role="Full-stack developer"
                 availabilityText={contactSite.availability}
-                quickContacts={contactSite.quickContacts}
                 profileImage={profileImage}
               />
             </FadeIn>
@@ -88,25 +86,6 @@ export function Contact({ mode = "section", managedSite, profileImage }: Contact
                           loading="lazy"
                           referrerPolicy="no-referrer-when-downgrade"
                         />
-                      </div>
-                    </div>
-
-                    <div className="rounded-[26px] border border-white/8 bg-[#1b4242] p-5 sm:p-6">
-                      <div className="space-y-2">
-                        <p className="text-[0.75rem] uppercase tracking-[0.22em] text-cyan-300/85">
-                          Direct contact
-                        </p>
-                        <h3 className="text-[1.4rem] font-semibold tracking-tight text-white">
-                          Reach me directly
-                        </h3>
-                        <p className="max-w-[50ch] text-[0.92rem] leading-7 text-slate-300">
-                          Use email, phone, GitHub, LinkedIn, or Telegram to start the
-                          conversation without needing a backend contact form.
-                        </p>
-                      </div>
-
-                      <div className="mt-6">
-                        <QuickContactList items={contactSite.quickContacts} />
                       </div>
                     </div>
                   </div>

@@ -27,7 +27,6 @@ export default async function BlogPage() {
       <div className="hidden lg:block">
         <Blog
           content={content.blog}
-          quickContacts={content.site.quickContacts}
           profileImage={content.media.profileImage}
         />
       </div>

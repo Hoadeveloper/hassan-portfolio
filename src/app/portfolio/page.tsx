@@ -28,7 +28,6 @@ export default async function PortfolioPage() {
         <Portfolio
           content={content.projects}
           projectImages={content.media.projectImages}
-          quickContacts={content.site.quickContacts}
           profileImage={content.media.profileImage}
         />
       </div>

@@ -6,7 +6,7 @@ export const site: Site = {
   title:
     "Frontend, backend, and automation-focused developer building modern websites, web apps, APIs, and bot-powered solutions.",
   description:
-    "Personal portfolio of Hassan Olanrewaju Abdulrahman, a full-stack web developer working across frontend development, backend systems, PHP, Python, APIs, bots, and practical software solutions.",
+    "Personal portfolio of Hassan Olanrewaju Abdulrahman, a Full-stack developer working across frontend development, backend systems, PHP, Python, APIs, bots, and practical software solutions.",
   location: "Available for remote-friendly web, backend, and automation work.",
   availability: "Open to freelance, contract, and long-term engineering opportunities.",
   roles: [
@@ -39,7 +39,7 @@ export const site: Site = {
   contactDetails: [
     {
       label: "Core focus",
-      value: "Full-stack web development",
+      value: "Full-stack developer",
       hint: "Frontend interfaces, backend systems, APIs, bots, and practical software solutions.",
     },
     {

@@ -92,7 +92,7 @@ export function createPersonSchema(content: ManagedContent) {
     email: content.site.email || undefined,
     telephone: content.site.phone || undefined,
     sameAs: socialLinks.length ? socialLinks : undefined,
-    jobTitle: "Full-Stack Web Developer",
+    jobTitle: "Full-stack developer",
     knowsAbout: [
       "Frontend development",
       "Backend development",

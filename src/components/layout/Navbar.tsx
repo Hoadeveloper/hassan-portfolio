@@ -7,14 +7,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { site } from "@/data/site";
 import { Container } from "@/components/layout/Container";
-import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { MobileLogo } from "@/mobile/ui/MobileLogo";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const resumeHref = "/resume/hassan-abdulrahman-resume.pdf";
   const [firstName, ...rest] = site.shortName.split(" ");
   const secondLine = rest.slice(0, 2).join(" ") || "Portfolio";
 
@@ -56,8 +54,9 @@ export function Navbar() {
             </div>
 
             <div className="hidden lg:block">
-              <p className="text-sm font-semibold text-white">{site.name}</p>
-              <p className="text-xs text-slate-400">{site.title}</p>
+              <p className="truncate text-[0.92rem] font-semibold uppercase leading-none tracking-[0.34em] text-white">
+                HASSAN O.A
+              </p>
             </div>
           </div>
         </Link>
@@ -72,9 +71,6 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Button href={resumeHref} variant="secondary" className="px-4 py-2 text-sm">
-            Resume
-          </Button>
         </nav>
 
         <button
